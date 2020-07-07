@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header,footer,body >div[class*=section]{
+    
+}
+
+.btn {
+
+    background: red ;
+    padding: 5px 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:white;
+    cursor: pointer;
+    
+
+}
+.btn:hover {
+    background: green;
+}
+/*Header-Top*/
+
+.header_top{
+
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    /* If i want to keep Middle then code below*/
+    width: 60%;
+    margin: 0 auto;
+    padding: 7px 0;
+    
+
+}
+.logo{
+    width: 100px;
+    height: 76px;
+    background: url(./siteimage/logo.jpg) no-repeat center center/cover;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+ nav ul{
+     display: flex;
+     
+ }
+ nav ul li{
+     list-style-type: none;
+     margin: 0px 20px;
+     font-size: 14px;
+     cursor: pointer;
+     
+ }
+ nav a{
+
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+ }
+
+ nav a:hover{
+     color: orange;
+     transition: 0.3s;
+ }
+ nav a::before{
+
+    content: "";
+    
+    width: 20px;
+    height: 20px;
+    background: url(./siteimage/menubefore.png)no-repeat center center/cover;
+    margin-left: -23px;
+    margin-right: 5px;
+    opacity:0;
+
+ }
+
+ nav a:hover::before{
+     opacity: 1;
+ }
+ .phone{
+     font-weight: 700;
+ }
+
+ /* Header Bottom */
+
+ .header_Bottom{
+ 
+
+ display: flex;
+
+ }
+ .header_Bottom > div {
+
+   
+    height: 400px;
+    flex-basis: 50%;
+
+ }
+ .header_Bottom_left{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC300;
+ }
+
+
+ .header_Bottom_left> div {
+
+   
+    flex-basis: 50%;
+ }
+
+ h1{
+
+     font-size: 30px;
+     margin-bottom: 30px;
+ }
+
+ .header_Bottom_left p {
+     margin: 20px 0;
+     text-transform: uppercase;
+     line-height: 23px;
+
+
+ }
+ .header_Bottom_left a {
+
+    text-decoration: none;
+    font-size: 12px;
+ }
+ .header_Bottom_right {
+
+    background: url("./siteimage/food_left.webp") no-repeat center center/cover;
+ }
+
+ /*Section */
+
+ body > div[class*=section] {
+padding: 50px 0;
+ }
+
+ h2{
+
+     font-size: 30 px;
+     text-align: center;
+     margin: 0 0 20px;
+     text-transform: uppercase;
+     font-weight: 500;
+
+ }
+  /*Section 2*/
+ .section-2{
+     background: #F5F5F5;
+ }
+
+
+
+ .section_2-wrap{
+
+width: 65%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+ }
+
+ .section-2-items {
+
+flex-basis: 32%;
+text-align: center;
+padding: 30px 10px;
+background: #fff;
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
+border-radius: 5px;
+cursor: pointer;
+margin-bottom: 20px;
+ }
+ .section-2-items:hover{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     transform: scale(1.10);
+     transition: 0.3s;
+ }
+
+ div[class*=items-img]{
+    
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+    
+  }
+  .section-2-items p{
+      font-size: 14px;
+      font-weight: 700;
+      margin: 20px 0;
+  }
+  .section-2-items:hover{
+      color: black;
+  }
+
+  .item_button{
+      border-top: 1px solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
+  .item_button a{
+      text-decoration: none;
+      font-size: 12px;
+  }
+  .item_button span{
+      font-weight: 700;
+      ;
+  }
+
+
+  .items-img1{
+background-image: url(./siteimage/img1.jpg);
+  }
+
+  .items-img2{
+    background-image: url(./siteimage/2.jpg);
+}
+
+.items-img3{
+    background-image: url(./siteimage/img3.jpg);
+}
+
+.items-img4{
+    background-image: url(./siteimage/4.jpg);
+}
+
+.items-img5{
+    background-image: url(./siteimage/5.jpg);  
+}
+
+.items-img6{
+    background-image: url(./siteimage/6.jpg);
+}
+
+/* Section 3*/
+.section-3{
+    background: #eef3a3;
+}
+.section_3-wrap{
+   
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    
+}
+
+.section_3-items{
+    
+    height: 150px;
+    border-radius: 10px;
+     box-shadow: 0 0 30px rgba(0, 0, 0, 0.10);
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.section_3-items:first-child,
+.section_3-items:nth-child(4)
+{
+    
+flex-basis: 60% ;
+
+}
+
+
+.section_3-items:nth-child(2),
+.section_3-items:nth-child(3){
+
+flex-basis: 38% ;
+
+}
+.section_3-items:nth-child(1){
+    background: url(./siteimage/5.jpg) no-repeat center center/cover;
+}
+.section_3-items:nth-child(2){
+    background: url(./siteimage/5.jpg) no-repeat center center/cover;
+}
+.section_3-items:nth-child(3){
+    background: url(./siteimage/2.jpg)  no-repeat center center/cover;
+}
+.section_3-items:nth-child(4){
+    background: url(./siteimage/6.jpg) no-repeat center center/cover;
+}
+.section_3-items:first-child div {
+    background: orange;
+}
+.section_3-items:nth-child(4) div{
+    background: orange;
+    padding: 10px;
+}
+
+.section_3-items:first-child div,
+.section_3-items:nth-child(4) div{
+
+    height: 100%;
+    width: 50%;
+    border-bottom-right-radius: 100%;
+}
+.section_3-items:nth-child(2) div,
+.section_3-items:nth-child(3) div
+{
+
+    background: yellowgreen;
+    height: 100%;
+    width: 50%;
+    border-bottom-right-radius: 100%;
+    padding: 20px;
+}
+
+.section_3-items:first-child p,
+.section_3-items:nth-child(4) p{
+    font-weight: 700;
+    font-size: 25px;
+}
+.section_3-items:first-child p,
+.section_3-items:nth-child(2) p,
+.section_3-items:nth-child(3) p
+{
+color: white;
+}
+
+.section_3-items:first-child span,
+.section_3-items:nth-child(4) span
+{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section_3-items:first-child div{
+    padding: 8px;
+}
+
+
+/* Section 4 */
+
+.section-4{
+  
+  background: whitesmoke;
+}
+
+.section-4-wrap{
+
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.section-4-wrap > div{
+    flex-basis: 48%;
+}
+
+.section-4-wrap p{
+    margin: 15px 0;
+    font-size: 15px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+video{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-4 h2{
+    padding-top: 35px;
+}
+
+/* Section 5 */
+
+
+
+.section_5-wrap{
+    
+    width: 70%;
+    margin: 40px auto 0;
+   
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-5{
+    background:#D0FFB7 ;
+}
+
+.section_5-items{
+  
+    flex-basis: 32%;
+    background: white;
+    border-radius: 5px;
+    padding: 20px 20px 10px;
+    box-shadow: rgba(0,0,0,0.1);
+    
+}
+
+.section_5-items p{
+ 
+    font-size: 15px;
+    line-height: 20px;
+}
+.section_5-items span{
+
+    
+    text-align: right;
+    font-weight: 700;
+    margin-top: 20px;
+
+
+}
+
+.section-5 h3 {
+    
+    text-align: center;
+    padding-top: 30px;
+}
+.section-5 h2 {
+    
+    text-align: center;
+    padding-top: 30px;
+}
+.section-5 form{
+   
+    margin: 20px auto ;
+    width: 40%;
+}
+
+.section-5 input,
+.section-5 textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin: 10px ;
+    border-radius: 5px;
+}
+.section-5 textarea{
+    height: 100px;
+}
+.section-5 button{
+    background: yellowgreen;
+    padding: 5px 5px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:white;
+    cursor: pointer;
+    margin-left: 37%;
+}
+.section-5 button:hover{
+background: #FFC300;
+}
+
+/* Fotter*/
+
+footer >div {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.payment img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 10px;
+    
+}
+
+
+
+.footer_phone p{
+    font: 700;
+    color: tomato;
+}
+.footer_phone a{
+
+    background: orange;
+   
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    color:white;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    
+  
+}
+.devinfo p{
+    
+    text-transform: uppercase;
+    font-weight: 500;
+    
+    
+}
+.payment p{
+margin-left: 10px;
+}
